@@ -67,7 +67,7 @@ function AgentsPage() {
   const fetchAgents = async () => {
     try {
       setLoading(true);
-      const response = await agentsAPI.list({ limit: 100 });
+      const response = await agentsAPI.list({ limit: 500 });
       // API returns { total, items, limit, offset } according to spec
       const data = response.data;
       setAgents(Array.isArray(data?.items) ? data.items : Array.isArray(data) ? data : []);
