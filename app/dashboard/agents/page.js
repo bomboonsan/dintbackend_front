@@ -194,7 +194,7 @@ function AgentsPage() {
               <div className="ml-5 w-0 flex-1">
                 <dl>
                   <dt className="text-sm font-medium text-gray-500 truncate">
-                    Total Agents
+                    จำนวนผู้ให้คะแนน
                   </dt>
                   <dd className="text-lg font-medium text-gray-900">
                     {agents.length}
@@ -212,7 +212,7 @@ function AgentsPage() {
               <div className="ml-5 w-0 flex-1">
                 <dl>
                   <dt className="text-sm font-medium text-gray-500 truncate">
-                    Unique Agent Codes
+                    จำนวนผู้แทนที่ได้รับคะแนน
                   </dt>
                   <dd className="text-lg font-medium text-gray-900">
                     {getUniqueAgentCodes()}
@@ -228,7 +228,7 @@ function AgentsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
           {/* Pie Chart */}
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-            <h3 className="text-lg font-medium text-gray-900 mb-4">Agent Code Frequency Distribution</h3>
+            <h3 className="text-lg font-medium text-gray-900 mb-4">การกระจายความถี่ของรหัสตัวแทน</h3>
             <div className="h-80">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
@@ -255,7 +255,7 @@ function AgentsPage() {
 
           {/* Top 10 List */}
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-            <h3 className="text-lg font-medium text-gray-900 mb-4">Top 10 Agent Codes by Frequency</h3>
+            <h3 className="text-lg font-medium text-gray-900 mb-4">อันดับ 10 รหัสตัวแทนที่มีความถี่สูงสุด</h3>
             <div className="space-y-3">
               {getTopAgentsByFrequency().map((agent, index) => (
                 <div key={agent.agent_code} className="flex items-center justify-between py-2 px-3 rounded-lg bg-gray-50">
