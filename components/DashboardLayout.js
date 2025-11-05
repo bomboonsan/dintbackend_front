@@ -22,7 +22,7 @@ export default function DashboardLayout({ children }) {
 
   const navigation = [
     { name: 'Overview', href: '/dashboard', icon: Home },
-    { name: 'Agents', href: '/dashboard/agents', icon: Users },
+    // { name: 'Agents', href: '/dashboard/agents', icon: Users },
     { name: 'Flex Messages', href: '/dashboard/flex', icon: MessageSquare },
     { name: 'Statistics', href: '/dashboard/stats', icon: BarChart3 },
   ];

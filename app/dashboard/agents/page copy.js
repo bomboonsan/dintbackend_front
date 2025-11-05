@@ -166,8 +166,6 @@ function AgentsPage() {
     agent.agent_code?.toLowerCase().includes(searchTerm.toLowerCase())
   ) : [];
 
-  return (<></>);
-
   return (
     <DashboardLayout>
       <div className="space-y-6">
